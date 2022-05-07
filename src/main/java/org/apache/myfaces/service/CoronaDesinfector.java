@@ -2,9 +2,9 @@ package org.apache.myfaces.service;
 
 public class CoronaDesinfector {
     @InjectByType
-    private final Announcer announcer;
+    private Announcer announcer;
     @InjectByType
-    private final Policeman policeman;
+    private Policeman policeman;
 
     public void start(Room room) {
         announcer.announce("Need to get out of room");
